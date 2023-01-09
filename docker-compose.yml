@@ -4,6 +4,9 @@ services:
       context: .
     volumes:
       - ./app:/app
+<<<<<<< HEAD
     ports:
       - 8000:8000
     command: python manage.py runserver 0.0.0.0:8000
+=======
+>>>>>>> 2ec98c6 (Create project and add Docker setup)

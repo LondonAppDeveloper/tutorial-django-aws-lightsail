@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 FROM python:3.11.1-alpine3.17
+=======
+FROM python:3.11.1
+>>>>>>> 2ec98c6 (Create project and add Docker setup)
 
 ENV PYTHONUNBUFFERED 1
 
