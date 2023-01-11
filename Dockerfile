@@ -1,12 +1,10 @@
-<<<<<<< HEAD
 FROM python:3.11.1-alpine3.17
-=======
-FROM python:3.11.1
->>>>>>> 2ec98c6 (Create project and add Docker setup)
 
 ENV PYTHONUNBUFFERED 1
 
 COPY ./requirements.txt /requirements.txt
+
+RUN apk add --update --no-cache postgresql-client build-base postgresql-dev
 
 RUN python -m venv /py && \
     /py/bin/pip install --upgrade pip && \
